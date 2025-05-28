@@ -13,7 +13,6 @@ app.use(function(req, res, next) {
 
 // Use environment variables for database URL
 const dbUri = process.env.DB_URI;
-
 mongoose.connect(dbUri);
 
 const flowerSchema = new mongoose.Schema({
